@@ -1,0 +1,21 @@
+/* Header styles */
+#header {
+  background-color: blue;
+  color: white;
+}
+
+#header h1 {
+  font-size: 24px;
+}
+
+/* Footer styles */
+#footer {
+  background-color: black;
+  color: white;
+}
+
+/* Highlighted paragraphs */
+.highlight {
+  color: red;
+  font-size: 18px;
+}
