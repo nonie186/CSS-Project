@@ -1,0 +1,83 @@
+## 1️⃣ What Does CSS Stand For?
+
+**CSS** stands for **Cascading Style Sheets**.
+
+- **Cascading**: Refers to how styles are applied in a hierarchy—browser defaults, external styles, inline styles, etc. The last rule wins if there’s a conflict.
+- **Style**: It controls the visual presentation—colors, fonts, layout, spacing.
+- **Sheets**: Think of it like a design blueprint layered over your HTML.
+
+---
+
+## 2️⃣ How Can You Implement CSS in a Webpage?
+
+There are **three main ways** to apply CSS to your HTML:
+
+### 🔹 Inline CSS
+Applied directly to an HTML element using the `style` attribute.
+
+```html
+<p style="color: blue;">This is blue text.</p>
+```
+
+✅ Quick but not scalable.
+
+---
+
+### 🔹 Internal CSS
+Written inside a `<style>` tag in the `<head>` section of your HTML.
+
+```html
+<head>
+  <style>
+    p {
+      color: green;
+    }
+  </style>
+</head>
+```
+
+✅ Good for small projects or single-page styling.
+
+---
+
+### 🔹 External CSS
+Linked via a separate `.css` file.
+
+```html
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+And in `styles.css`:
+
+```css
+p {
+  color: red;
+}
+```
+
+✅ Best practice for maintainability and scalability.
+
+---
+
+## 3️⃣ The Anatomy of a CSS Rule
+
+Let’s dissect a CSS rule like a code surgeon 🧪:
+
+```css
+h1 {
+  color: navy;
+  font-size: 24px;
+}
+```
+
+| Part              | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| **Selector**      | `h1` — Targets the HTML element you want to style                          |
+| **Declaration Block** | `{ color: navy; font-size: 24px; }` — Contains all style rules            |
+| **Property**      | `color`, `font-size` — The visual aspect you want to change                 |
+| **Value**         | `navy`, `24px` — The specific setting for the property                      |
+| **Declaration**   | `color: navy;` — A single property-value pair, ends with a semicolon        |
+
+🔧 Multiple declarations go inside one block, separated by semicolons.
